@@ -28,7 +28,12 @@ const generatePassword = (
 
   const passwordLength = 10;
 
-  const generators = [];
+  const generators = [
+    getLetterLowerCase,
+    getLetterUpperCase,
+    getNumber,
+    getSymbol,
+  ];
 };
 
 generatePasswordButton.addEventListener("click", () => {
