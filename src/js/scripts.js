@@ -35,7 +35,7 @@ const generatePassword = (
     getSymbol,
   ];
 
-  for (let i = 0; i < passwordLength; i = i + 4) {
+  for (let i = 0; i < passwordLength; i++) {
     generators.forEach(() => {
       const randomValue =
         generators[Math.floor(Math.random() * generators.length)]();
